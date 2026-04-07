@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ClearLivin — Pure Water, Pure Life</title>
+  <meta name="description" content="ClearLivin — Premium whole-home water purification. Experience pure water through an immersive visual journey.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="preloader-inner">
+      <div class="preloader-ring"></div>
+      <span class="preloader-text">Loading Experience</span>
+      <span class="preloader-percent">0%</span>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav id="navbar" class="navbar">
+    <div class="navbar-inner">
+      <!-- Logo -->
+      <a href="#" class="navbar-logo" id="nav-logo">
+        <span class="logo-clear">C L E A R</span>
+        <span class="logo-living">L I V I N G<sup>™</sup></span>
+      </a>
+
+      <!-- Center Links -->
+      <ul class="navbar-links" id="nav-links">
+        <li><a href="#" id="nav-shop">SHOP</a></li>
+        <li><a href="#" id="nav-about">ABOUT</a></li>
+        <li><a href="#" id="nav-blog">BLOG</a></li>
+        <li><a href="#" id="nav-testit">TEST IT</a></li>
+        <li><a href="#" id="nav-contact">CONTACT</a></li>
+      </ul>
+
+      <!-- Right Actions -->
+      <div class="navbar-actions" id="nav-actions">
+        <!-- Language -->
+        <button class="nav-action-btn nav-lang" id="nav-lang">
+          English
+          <svg width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <!-- Search -->
+        <button class="nav-action-btn" id="nav-search" aria-label="Search">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </button>
+        <!-- Account -->
+        <button class="nav-action-btn" id="nav-account" aria-label="Account">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        </button>
+        <!-- Cart -->
+        <button class="nav-action-btn" id="nav-cart" aria-label="Cart">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Sticky Canvas -->
+  <canvas id="frame-canvas"></canvas>
+
+  <!-- Hero Text — Condensation Effect -->
+  <div id="hero-text" class="hero-text">
+    <!-- Foggy glass overlay that wipes away -->
+    <div class="condensation-glass"></div>
+    <!-- Water droplets -->
+    <div class="droplet droplet-1"></div>
+    <div class="droplet droplet-2"></div>
+    <div class="droplet droplet-3"></div>
+    <div class="droplet droplet-4"></div>
+    <div class="droplet droplet-5"></div>
+    <div class="droplet droplet-6"></div>
+    <div class="droplet droplet-7"></div>
+    <div class="droplet droplet-8"></div>
+    <!-- The text itself -->
+    <h1 class="hero-heading">
+      <span class="hero-line hero-line-1">Healthy living begins with</span>
+      <span class="hero-line hero-line-2">clean water</span>
+    </h1>
+  </div>
+
+  <!-- Section 2 Overlay — Wellness + Form -->
+  <div id="wellness-overlay" class="wellness-overlay">
+    <div class="wellness-inner">
+      <!-- Left Side — Text -->
+      <div class="wellness-text" id="wellness-text">
+        <span class="wellness-label">OUR PHILOSOPHY</span>
+        <h2 class="wellness-heading">Whole-home water wellness</h2>
+        <p class="wellness-body">You don't just drink water — you shower in it, bathe in it, cook with it, and clean with it.</p>
+        <p class="wellness-body">That's why we created a holistic system to cover every touch point in your home.</p>
+      </div>
+
+      <!-- Right Side — Glass Form -->
+      <div class="wellness-form-card" id="wellness-form-card">
+        <div class="form-header">
+          <h3 class="form-title">Is Your Water<br><span class="form-title-highlight">Really Clean?</span></h3>
+          <p class="form-subtitle">Get your free personalized water quality report in seconds.</p>
+        </div>
+        <form class="water-form" id="water-form" autocomplete="off">
+          <div class="form-group">
+            <label for="form-fname">First Name <span class="req">*</span></label>
+            <input type="text" id="form-fname" placeholder="John" required>
+          </div>
+          <div class="form-group">
+            <label for="form-email">Email Address <span class="req">*</span></label>
+            <input type="email" id="form-email" placeholder="your@email.com" required>
+          </div>
+          <div class="form-group">
+            <label for="form-phone">Phone Number <span class="req">*</span></label>
+            <input type="tel" id="form-phone" placeholder="(555) 123-4567" required>
+          </div>
+          <div class="form-group">
+            <label for="form-zip">ZIP Code <span class="req">*</span></label>
+            <input type="text" id="form-zip" placeholder="90210" required>
+          </div>
+          <button type="submit" class="form-submit" id="form-submit">Get My Free Report</button>
+          <p class="form-disclaimer">Instant report. No obligation. Based on third party data. By continuing, you agree to our <a href="#">Privacy Policy</a> &amp; <a href="#">Terms</a>.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section 3 Overlay — Product Showcase -->
+  <div id="showcase-overlay" class="showcase-overlay">
+    <div class="showcase-inner">
+      <!-- Left Side — Images -->
+      <div class="showcase-visuals" id="showcase-visuals">
+        <!-- Cards will be dynamically animated -->
+        <div class="product-card" data-index="0">
+          <div class="card-glass"></div>
+          <div class="product-image-container">
+            <img src="assets/products/whole-home.png" alt="Whole Home System" class="product-img">
+            <div class="product-badge">Flagship</div>
+          </div>
+          <div class="product-info-bar">
+            <span>#WholeHome</span>
+            <span>#ZeroChlorine</span>
+            <span>#10YearLife</span>
+          </div>
+        </div>
+        
+        <div class="product-card" data-index="1">
+          <div class="card-glass"></div>
+          <div class="product-image-container gradient-blue">
+            <img src="assets/products/shower-head.png" alt="PureFlow Shower Head" class="product-img">
+          </div>
+          <div class="product-info-bar">
+            <span>#SpaShower</span>
+            <span>#HairCare</span>
+            <span>#SkinHealth</span>
+          </div>
+        </div>
+        
+        <div class="product-card" data-index="2">
+          <div class="card-glass"></div>
+          <div class="product-image-container gradient-cyan">
+            <img src="assets/products/water-filter.png" alt="Under-Sink Filter" class="product-img">
+          </div>
+          <div class="product-info-bar">
+            <span>#PureDrinking</span>
+            <span>#NoPlastic</span>
+            <span>#ReverseOsmosis</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Side — Details -->
+      <div class="showcase-details" id="showcase-details">
+        <div class="detail-item" data-index="0">
+          <span class="detail-category">Whole Home</span>
+          <h3 class="detail-title">ClearCore Point-of-Entry</h3>
+          <p class="detail-desc">Industrial-grade filtration for every tap. Removes 99.9% of chlorine, heavy metals, and VOCs before they enter your home's plumbing.</p>
+          <div class="detail-footer">
+            <span class="detail-price">$2,499</span>
+            <button class="detail-btn">Explore System</button>
+          </div>
+        </div>
+        <div class="detail-item" data-index="1">
+          <span class="detail-category">Bath & Shower</span>
+          <h3 class="detail-title">PureFlow Rainfall</h3>
+          <p class="detail-desc">Transform your shower into a spa. Built-in sediment and carbon filtration protects your skin and hair from harsh chemicals.</p>
+          <div class="detail-footer">
+            <span class="detail-price">$189</span>
+            <button class="detail-btn">Buy Now</button>
+          </div>
+        </div>
+        <div class="detail-item" data-index="2">
+          <span class="detail-category">Kitchen</span>
+          <h3 class="detail-title">Aura Under-Sink</h3>
+          <p class="detail-desc">Flawless drinking water on demand. The 5-stage reverse osmosis system fits neatly under your counter, replacing plastic bottles forever.</p>
+          <div class="detail-footer">
+            <span class="detail-price">$450</span>
+            <button class="detail-btn">Buy Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section 5 Overlay — Footer -->
+  <div id="footer-overlay" class="footer-overlay">
+    <div class="footer-inner">
+      <!-- Top Row -->
+      <div class="footer-top">
+        <!-- Brand -->
+        <div class="footer-card">
+          <div class="footer-logo">
+            <span class="logo-clear">C L E A R</span>
+            <span class="logo-living">L I V I N G<sup>™</sup></span>
+          </div>
+          <p class="brand-tagline">Wellness in Every Drop</p>
+        </div>
+
+        <!-- Links Grid -->
+        <div class="footer-card footer-nav">
+          <div class="nav-column">
+            <h4>Home</h4>
+            <a href="#">Shop</a>
+            <a href="#">About Us</a>
+            <a href="#">Blog</a>
+            <a href="#">Support</a>
+          </div>
+          <div class="nav-column">
+            <h4>Support</h4>
+            <a href="#">FAQs</a>
+            <a href="#">Shipping Policy</a>
+            <a href="#">Return Policy</a>
+            <a href="#">Become A Partner</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+          </div>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="footer-card footer-newsletter">
+          <h4>STAY UP TO DATE</h4>
+          <p>Join our community for the latest collections, and exclusive offers.</p>
+          <form class="footer-form" autocomplete="off">
+            <div class="input-wrap">
+              <input type="email" placeholder="Your email" required>
+              <button type="submit">Sign up</button>
+            </div>
+          </form>
+          <p class="newsletter-disclaimer">By signing up, you agree to receive updates and promotional content from ClearLiving™. Our products support general wellness and longevity and are not intended to diagnose, treat, cure, or prevent any disease.</p>
+        </div>
+      </div>
+
+      <!-- Bottom Row -->
+      <div class="footer-bottom">
+        <div class="footer-social">
+          <span>Follow on</span>
+        </div>
+        <div class="footer-settings">
+          <div class="setting-item">
+            <span>Country</span>
+            <button>United States (USD $)</button>
+          </div>
+          <div class="setting-item">
+            <span>Language</span>
+            <button>English</button>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          &copy; 2026, ClearLiving™
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Progress Bar -->
+  <div id="progress-bar">
+    <div id="progress-fill"></div>
+  </div>
+
+  <!-- Section Indicators -->
+  <div id="section-dots">
+    <button class="dot active" data-section="0" aria-label="Section 1"></button>
+    <button class="dot" data-section="1" aria-label="Section 2"></button>
+    <button class="dot" data-section="2" aria-label="Section 3"></button>
+    <button class="dot" data-section="3" aria-label="Section 4"></button>
+    <button class="dot" data-section="4" aria-label="Section 5"></button>
+  </div>
+
+  <!-- Scroll Container — each section is 100vh tall for scrolling, the canvas stays fixed -->
+  <div id="scroll-container">
+    <section class="scroll-section" id="section-1" data-video="1"></section>
+    <section class="scroll-section" id="section-2" data-video="2"></section>
+    <section class="scroll-section" id="section-3" data-video="3"></section>
+    <section class="scroll-section" id="section-4" data-video="4"></section>
+    <section class="scroll-section" id="section-5" data-video="5"></section>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
